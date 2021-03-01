@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Stripe Metamers</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	</style>
+</head>
+<body>
+
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"001.png",
+				"002.png",
+				"003.png",
+				"004.png",
+				"005.png",
+				"006.png",
+				"007.png",
+				"008.png",
+				"009.png",
+				"010.png",
+				"011.png",
+				"012.png"
+			)
+		//--><!]]>
+	</script>
+</div>
+
+<div class="toppin">
+
+	<h1>Test Metamers <span id="curnum">0</span>/10
+
+	<!-- input type="number" placeholder="input texture duration" id="duration" name="duration" min="200" step="100"><span id="ms">ms  </span> -->
+
+	<select id="select">
+	  <option value="2">2 straps</option>
+	</select>
+
+	</h1>
+
+	<div class="instruction">Use ArrowDown to show the next image.
+Use ArrowLeft/ArrowRight to select vertical/horizontal split.
+Green indicates correct answer, red indicates wrong answer.</div>
+	<button class="button" id="next" onclick="nextImage()">Next Image</button>
+	<button class="button"><a href="https://helenxzd.github.io/Introscreen/#/Introscreen/intro3">Next Stage</a></button>
+
+</div>
+
+<div class="result" id="result"></div>
+
+
+<div class="imageShow" id="imageShow">
+
+	<img class="metamers" 
+	 id="metamers">
+
+</div>
+
+<div class="footButtons">
+	<button class="button" id="vertical" onclick="checkCorrect(this.id)">vertical</button>
+	<button class="button" id="horizontal" onclick="checkCorrect(this.id)">horizontal</button>
+</div>
+
+<script type="text/javascript" src="index.js"></script>
+
+
+</body>
+</html>
