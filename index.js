@@ -54,7 +54,6 @@ function nextImage() {
 	// when count is full, move to next round of test with a new duration
 
 	if (isChecked == true || count == 0) {
-		clearTimeout(param);
 		isChecked = false;
 
 		numberOfStraps = document.getElementById("select").value;
@@ -136,6 +135,11 @@ function checkCorrect(checkedId) {
 		var src = img.src.slice(srcIndex+1);
 
 		result.innerText = result.innerText + src + ' ' + checkedId + ' ';
+
+		if (count >= 10) {
+			var nextstage = document.getElementById("nextstage");
+			nextstage.style.display = "block"
+		}
 
 
 
