@@ -7,71 +7,25 @@
 </head>
 <body>
 
-<div class="hidden">
-	<script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-			var images = new Array()
-			function preload() {
-				for (i = 0; i < preload.arguments.length; i++) {
-					images[i] = new Image()
-					images[i].src = preload.arguments[i]
-				}
-			}
-			preload(
-				"001.png",
-				"002.png",
-				"003.png",
-				"004.png",
-				"005.png",
-				"006.png",
-				"007.png",
-				"008.png",
-				"009.png",
-				"010.png",
-				"011.png",
-				"012.png"
-			)
-		//--><!]]>
-	</script>
-</div>
-
 <div class="toppin">
 
-	<h1>Test Metamers <span id="curnum">0</span>/10
-
+	<h1>Patterns
 	<!-- input type="number" placeholder="input texture duration" id="duration" name="duration" min="200" step="100"><span id="ms">ms  </span> -->
-
-	<select id="select">
-	  <option value="2">2 stripes</option>
-	</select>
-
 	</h1>
 
-	<div class="instruction">Use ArrowDown to show the next image.
-Use ArrowLeft/ArrowRight to select vertical/horizontal split.
-Green indicates correct answer, red indicates wrong answer.</div>
-	<button class="button" id="next" onclick="nextImage()">Next Image</button>
-	<div id="nextstage"><button class="button"><a href="https://helenxzd.github.io/Introscreen/#/Introscreen/intro3">Next Stage</a></button></div>
+	<div class="instruction">These two patterns are the components of the bipartite textures. The main test images will be based on these two patterns. Once you are familar with the patterns, click 'Move to Main Stage' to continue.</div>
+	<div><button class="button"><a href="https://helenxzd.github.io/Introscreen/#/Introscreen/intro3">Move to Main Stage</a></button></div>
 
 </div>
-
-<div class="result" id="result"></div>
-
 
 <div class="imageShow" id="imageShow">
 
-	<img class="metamers" 
-	 id="metamers">
+	<img src='3-level.png' class="patterns" 
+	 id="patterns">
+
+	<img src='17-level.png' class="patterns" 
+	id="patterns">
 
 </div>
-
-<div class="footButtons">
-	<button class="button" id="vertical" onclick="checkCorrect(this.id)">vertical</button>
-	<button class="button" id="horizontal" onclick="checkCorrect(this.id)">horizontal</button>
-</div>
-
-<script type="text/javascript" src="index.js"></script>
-
 
 </body>
-</html>

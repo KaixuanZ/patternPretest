@@ -36,6 +36,14 @@
 	image-rendering: pixelated;
 }
 
+.patterns {
+	width: 500px;
+	height: 500px;
+	image-rendering: pixelated;
+	margin: 20px;
+
+}
+
 .footButtons {
 	width: 100%;
 	justify-content: space-around;
